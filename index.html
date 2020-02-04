@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title id="pageTitle">Anton Brottare</title>
+    <link rel="icon" type="image/png" href="lologo.png">
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <meta name="google-site-verification" content="jf3_4BXsQIBrfyZdAN3TlH0BG0Xk306VIIkj3dwaxiM" />
+
+</head>
+
+<body data-spy="scroll" data-target="#topNav" data-offset="110">
+
+    <nav id="topNav" class="navbar fixed-top navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href=".">
+            Anton Brottare
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span id="navbarToggler" class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#about" onclick="return Scroll(event);">About me
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects" onclick="return Scroll(event);">Projects
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact" onclick="return Scroll(event);" data-toggle="modal"
+                        data-target="#contactModal">Contact
+                    </a>
+                </li>
+
+
+            </ul>
+
+        </div>
+    </nav>
+
+    <div class="particleDiv">
+        <div id="wrapper">
+
+
+
+            <section class="container" id="about">
+
+                <h1>About me</h1>
+                <img src="anton.jpeg" class="img-fluid rounded" alt="Image of me"><br>
+
+                <p>I’m a solution-oriented tech-head with a bachelor in interaction design. I approach each task with a
+                    holistic state of mind and my positive attitude keeps me focused through adversities. My biggest
+                    strength is combining my coding skills with my desire for efficient research and user experiences.
+                    Efficiency for me doesn’t necessarily mean just completing something quickly, but rather ensuring
+                    that all parties are satisfied with the result.
+                </p>
+                <p>In my leisure time I often spend time outside, whether it’s on my longboard cruising along
+                    Ribersborgsstranden or hiking in one of Skånes beautiful nature reserves. When the weather is acting
+                    up I prefer gaming, going for a swim or enjoying a Gin & Tonic in good company.
+                </p>
+            
+                <h1>Skills</h1>
+                <p>My favourite things to work with include</p>
+                <span class="badge badge-pill badge-info">JavaScript</span>
+                <span class="badge badge-pill badge-info">C#</span>
+                <span class="badge badge-pill badge-info">Python</span><br>
+                <span class="badge badge-pill badge-info">User research</span>
+                <span class="badge badge-pill badge-info">User Experiences</span>
+            </section>
+
+
+            <section class="container" id="projects">
+                <h1>Projects</h1>
+                <p>A selection of things I worked on during my studies at Malmö University</p>
+                <div id="carouselCaptions" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselCaptions" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselCaptions" data-slide-to="1"></li>
+                        <li data-target="#carouselCaptions" data-slide-to="2"></li>
+                        <li data-target="#carouselCaptions" data-slide-to="3"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <a href="projects/dareto">
+                                <img src="media/dareTo_1.jpg" class="d-block w-100"
+                                    alt="Image of dareto">
+                            </a>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Dare To</h5>
+
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="projects/thesis">
+                                <img src="media/thesis.png" class="d-block w-100" alt="Image of thesis">
+                            </a>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Thesis</h5>
+
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <a href="projects/prenatalcare">
+                                <img src="media/prenatalCare.png" class="d-block w-100"
+                                    alt="Image of prenatal care project">
+                            </a>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Supporting partners</h5>
+
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <a href="projects/whatliesahead">
+                                <img src="media/liesAhead.png" class="d-block w-100" alt="Image of what lies ahead">
+                            </a>
+                            <div class="carousel-caption d-none d-md-block">
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselCaptions" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselCaptions" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+
+
+
+
+            </section>
+
+        </div>
+    </div>
+
+
+
+    <div id="particles-js"></div>
+
+    <!--Contact-->
+
+    <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="ModalLongTitle">Contact</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <a class="contactInfo" href="https://www.linkedin.com/in/anton-brottare/">
+                        <i class="fab fa-linkedin-in iconSpace"></i>Connect</a>
+                    <br>
+
+                    <a class="contactInfo" href="mailto:anton@brottare.eu">
+
+                        <i class="far fa-envelope iconSpace"></i>Anton@Brottare.eu</a>
+                </div>
+
+                
+                <div class="modal-footer">
+                       
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/Contact-->
+
+    
+
+
+
+     <!-- More scripts -->
+     <script src="particles/particles.js"></script>
+     <script src="particleControl.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"
+         integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous">
+     </script>
+     <script src="script.js"></script>
+</body>
+
+</html>

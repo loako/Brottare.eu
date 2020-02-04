@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title id="pageTitle">Anton Brottare</title>
+    <link rel="icon" type="image/png" href="../../lologo.png">
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <meta name="google-site-verification" content="jf3_4BXsQIBrfyZdAN3TlH0BG0Xk306VIIkj3dwaxiM" />
+
+</head>
+
+<body data-spy="scroll" data-target="#topNav" data-offset="110">
+
+    <nav id="topNav" class="navbar fixed-top navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="/index.html">
+            Anton Brottare
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span id="navbarToggler" class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/index.html#about" >About me
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/index.html#projects" >Projects
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact" onclick="return Scroll(event);" data-toggle="modal"
+                        data-target="#contactModal">Contact
+                    </a>
+                </li>
+
+
+            </ul>
+
+        </div>
+    </nav>
+
+    <div class="particleDiv">
+        <div id="wrapper">
+
+
+
+            <section class="container" id="dareto">
+                <h1>Dare To</h1>
+                <div id="carouselCaptions" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselCaptions" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselCaptions" data-slide-to="1"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../../media/dareTo_1.jpg" class="d-block w-100 img-fluid rounded"
+                                alt="Image of dareto">
+                            <div class="carousel-caption d-none d-md-block">
+
+
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../../media/dareTo_2.jpg" class="d-block w-100" alt="Image 2 of dareto">
+                            <div class="carousel-caption d-none d-md-block">
+
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselCaptions" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselCaptions" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <h4>Task</h4>
+                <p>Create a tangible prototype on the theme of home away from home.</p>
+
+                <h4>Result</h4>
+                <p>
+                    My group worked from the point of view of refugees. After five in-depth interviews we concluded that
+                    a lot of what troubles newly arrived refugees is stress related.
+                    What we take for granted in our everyday life is riddled with stress for someone that isn't fully
+                    aware of social codes or that doesn't speak the language.
+                    <br>With these insights we created a handheld tool for managing stress.
+                </p>
+
+                <h4>How</h4>
+                <p>The tool was created with an arduino as the base. <br>A heartrate sensor detected the users stress
+                    level.<br>A heating pad warmed up Dare To mimicing holding someones hand.<br>A force sensitive
+                    resistor detected squeezes.<br> Dare To responded to squeezes by playing a prerecored message or song to motivate the
+                    user.</p>
+                <h4>Skills</h4>
+                <p>Arduino coding with external libraries<br>Research through literature and interviews<br>Physical prototyping with electrics</p>
+            </section>
+        </div>
+    </div>
+
+
+
+    <div id="particles-js"></div>
+
+    <!--Contact-->
+
+    <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="ModalLongTitle">Contact</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <a class="contactInfo" href="https://www.linkedin.com/in/anton-brottare/">
+                        <i class="fab fa-linkedin-in iconSpace"></i>Connect</a>
+                    <br>
+
+                    <a class="contactInfo" href="mailto:anton@brottare.eu">
+
+                        <i class="far fa-envelope iconSpace"></i>Anton@Brottare.eu</a>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/Contact-->
+
+    <!-- More scripts -->
+    <script src="../../particles/particles.js"></script>
+    <script src="particleControl.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"
+        integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous">
+    </script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
